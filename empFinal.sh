@@ -3,7 +3,7 @@ employeeCheck=$((RANDOM%2));
 if [ ${employeeCheck} == 1 ];
 then
 	empHour=8;
-elif [ ${randomCheck} == 2 ];
+elif [ ${employeeCheck} == 2 ];
 then
 	empHour=4
 else
