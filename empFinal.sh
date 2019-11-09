@@ -1,6 +1,6 @@
 #!/bin/bash -x
-randomCheck11=$((RANDOM%3));
-if [ ${randomCheck} == 1 ];
+employeeCheck=$((RANDOM%2));
+if [ ${employeeCheck} == 1 ];
 then
 	empHour=8;
 elif [ ${randomCheck} == 2 ];
