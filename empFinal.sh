@@ -1,9 +1,12 @@
 #!/bin/bash -x
-isPresent=$((RANDOM%2));
-if [ ${isPresent} == 1 ];
+randomCheck11=$((RANDOM%3));
+if [ ${randomCheck} == 1 ];
 then
-echo "employee is present";
+	empHour=8;
+elif [ ${randomCheck} == 2 ];
+then
+	empHour=4
 else
-echo "employee is not present"
+	empHour=0;
 fi
 
