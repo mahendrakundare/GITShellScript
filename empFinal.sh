@@ -8,6 +8,7 @@ Salary=0;
 counter=0;
 working_hours=0;
 hours=0;
+declare -A 
 function total_hours(){
    work=$((RANDOM%3))
    case $work in $isFullTime )
@@ -25,12 +26,13 @@ do
    
    hours=$( total_hours )
    temp=$(($rate_hour * $hours))
+   dailyWages["$day"]=$temp
    Salary=$(($Salary+$temp))
-   Wages[((counter++))]=$temp
-   
+  # Wages[((counter++))]=$temp
 done
-echo ${Wages[@]}
-echo $Salary
+#echo ${Wages[@]}
+#echo $Salary
+echo key value pair is  ${dailyWages[@]}
 }
 
 result=$( Wage )
